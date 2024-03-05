@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "5a25",
+      "title": "Test 1",
+      "description": " query.value = {};",
+      "status": "toDo",
+      "priority": "medium",
+      "createdAt": "2024-03-05T08:55:52.721Z"
+    },
+    {
+      "id": "8287",
+      "title": "Second test 2",
+      "description": "We are testing our new app",
+      "status": "inProgress",
+      "priority": "medium",
+      "createdAt": "2024-03-05T08:59:30.793Z"
+    },
+    {
+      "id": "bd85",
+      "title": "Fourth test 4",
+      "description": "test a test fourth one",
+      "status": "inReview",
+      "priority": "high",
+      "createdAt": "2024-03-05T09:01:16.325Z"
+    },
+    {
+      "id": "0ff2",
+      "title": "Fifth test",
+      "description": "bundler config in order to get better tr",
+      "status": "completed",
+      "priority": "high",
+      "createdAt": "2024-03-05T09:04:16.613Z"
+    }
+  ]
+}

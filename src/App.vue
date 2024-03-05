@@ -1,30 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div>
+    <NavBar />
+  </div>
+  <div class="flex flex-col">
+    <router-view />
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts" setup>
+import { defineAsyncComponent } from "vue";
+import { useTasksStore } from "@/store/tasksStore";
 
-nav {
-  padding: 30px;
+const NavBar = defineAsyncComponent(
+  () => import("@/components/core/NavBar.vue")
+);
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+const { getTasks } = useTasksStore();
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+getTasks();
+</script>
